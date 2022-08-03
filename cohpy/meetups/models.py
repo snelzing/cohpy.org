@@ -52,7 +52,11 @@ class Meetup(models.Model):
     date = models.DateTimeField()
     location = models.TextField(blank=True)    
     talks = models.ManyToManyField(Talk, blank=True)
-    meetup_type = models.ForeignKey(MeetupType)
+    meetup_type = models.ForeignKey(
+        MeetupType,
+        on_delete=models.PROTECT,
+
+    )
     posted_to_meetup = models.BooleanField(default=False)
     
     def safe_description(self):
