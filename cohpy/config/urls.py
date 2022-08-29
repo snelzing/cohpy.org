@@ -4,7 +4,7 @@
 from django.contrib import admin
 from django.urls import re_path, include
 
-from cohpy.meetups import views
+from meetups import views
 
 
 urlpatterns = [

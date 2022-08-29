@@ -1,4 +1,4 @@
-from .models import GeneralInfoBlock, DojoInfoBlock
+from info_block.models import GeneralInfoBlock, DojoInfoBlock
 
 from django.utils.safestring import mark_safe
 
